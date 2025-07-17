@@ -1,0 +1,70 @@
+/* Reset some defaults */
+body{
+    background-color: rgb(255,82,0);
+    color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* First li on left side */
+header ul li:first-child {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10%;
+}
+
+/* Logo image styling */
+header ul li:first-child img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  /* background-color: black; */
+  
+}
+
+/* The rest of the lis on the right side */
+header ul li:not(:first-child) {
+  margin-right: 20px;
+  font-size: 16px;
+  /* color: #333; */
+  cursor: pointer;
+}
+
+/* Align rest of the items to right */
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Optional hover effect */
+header ul li:hover {
+  color: #fc8019;
+  transition: color 0.3s;
+}
