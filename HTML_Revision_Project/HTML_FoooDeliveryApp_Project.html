@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Delivery App HTML Based Project</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div>
-            <ul>
-                <li><img src="./Images/Swiggy_logo_bml6he.png"  alt="Logo"/> </li>
-                <li>Swiggy Corporate</li>
-                <li>Partner With Us</li>
-                <li>Get The App</li>
-                <li>Sign In</li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li><img src="./Images/Swiggy_logo_bml6he.png" alt="Logo" /></li>
+          <li>Swiggy Corporate</li>
+          <li>Partner With Us</li>
+          <li class="install">
+            Get The App <i class="fa-solid fa-up-long arrow"></i>
+          </li>
+          <li class="signIn">Sign In</li>
+        </ul>
+      </div>
     </header>
-</body>
+    <main>
+      <div>
+        <img
+          src="./Images/Veggies_new.png"
+          alt="Left Corner"
+          class="corner-img left-img"
+        />
+        <img
+          src="./Images/Sushi_replace.png"
+          alt="Right Corner"
+          class="corner-img right-img"
+        />
+        <h1 class="mainHeading">
+          Order food & groceries. Discover best restaurants. Swiggy it!
+        </h1>
+        <div class="searchBar">
+          <!-- From Uiverse.io by vinodjangid07 -->
+          <div class="InputContainer">
+            <input
+              placeholder="Enter your delivery location..."
+              id="input"
+              class="input"
+              name="text"
+              type="text"
+            />
+          </div>
+          <div class="InputContainerTwo">
+            <input
+              placeholder="Search for restaurant, item or more..."
+              id="input"
+              class="inputTwo"
+              name="text"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

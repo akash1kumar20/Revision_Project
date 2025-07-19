@@ -1,7 +1,7 @@
 /* Reset some defaults */
-body{
-    background-color: rgb(255,82,0);
-    color: white;
+body {
+  background-color: rgb(255, 82, 0);
+  color: white;
 }
 
 * {
@@ -11,6 +11,7 @@ body{
 }
 
 header {
+  margin-top: 15px;
   padding: 15px 0;
 }
 
@@ -20,6 +21,8 @@ header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
 }
 
 header ul {
@@ -46,7 +49,6 @@ header ul li:first-child img {
   height: auto;
   margin-right: 10px;
   /* background-color: black; */
-  
 }
 
 /* The rest of the lis on the right side */
@@ -67,4 +69,119 @@ header ul {
 header ul li:hover {
   color: #fc8019;
   transition: color 0.3s;
+}
+
+/* for sides images */
+.corner-img {
+  position: fixed;
+  width: 300px; /* Adjust as you like */
+  transform: rotate(-15deg); /* Tilt */
+  z-index: -1; /* Behind content */
+  opacity: 0.8; /* Optional transparency */
+}
+
+/* Left corner image */
+.left-img {
+  top: -50px;
+  left: -100px;
+}
+
+/* Right corner image */
+.right-img {
+  top: -50px;
+  right: -100px;
+  transform: rotate(15deg); /* Opposite tilt for right */
+}
+
+.arrow {
+  transform: rotate(45deg);
+  padding-left: 3px;
+}
+
+.install {
+  padding: 14px;
+  border: 2px solid white;
+  border-radius: 15%;
+  box-shadow: 1cm white;
+}
+
+.signIn {
+  padding: 14px 25px 14px 25px;
+  border: 2px solid white;
+  border-radius: 15%;
+  box-shadow: 1cm white;
+  color: white;
+  background-color: black;
+}
+.mainHeading {
+  padding: 1.5cm 10cm;
+  font-weight: bolder;
+  font-size: 1.3cm;
+  text-align: center;
+}
+.searchBar {
+  padding: 0cm 10cm;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* From Uiverse.io by vinodjangid07 */
+.InputContainer {
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(227, 213, 255),
+    rgb(255, 231, 231)
+  );
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 230px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+.InputContainerTwo {
+  width: 340px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(227, 213, 255),
+    rgb(255, 231, 231)
+  );
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+.inputTwo {
+  width: 330px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
 }
