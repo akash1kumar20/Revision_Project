@@ -185,3 +185,88 @@ header ul li:hover {
   color: rgb(19, 19, 19);
   font-size: 13.4px;
 }
+.otherOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0cm 10cm 0cm 10cm;
+}
+
+.otherOptionsImage {
+  width: 400px;
+}
+/* container two styling */
+.containerTwo {
+  background-color: white;
+  color: black;
+  padding: 2cm 5cm 0cm 5cm;
+}
+.slider {
+  position: relative;
+  width: 90opx;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 50%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Navigation buttons */
+.navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.navigation label {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Slide Control */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-50%);
+}
+h3 {
+  font-weight: bolder;
+  font-size: 0.75cm;
+  margin-bottom: 10px;
+}
+.instaMart {
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+}
+.containerThree {
+  background-color: white;
+}
+.containerThreeImage {
+  width: 100vw;
+  margin: 2cm 0cm 2cm 0cm;
+}
