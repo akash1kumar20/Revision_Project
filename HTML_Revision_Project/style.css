@@ -270,3 +270,12 @@ h3 {
   width: 100vw;
   margin: 2cm 0cm 2cm 0cm;
 }
+
+.footer {
+  padding-top: 1cm;
+  background-color: white;
+}
+
+.footerImage {
+  width: 100vw;
+}
