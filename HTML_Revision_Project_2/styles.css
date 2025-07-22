@@ -99,9 +99,13 @@ body {
   width: 150px;
   text-align: center;
 }
-
+.iconsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .icons img {
-  width: 30px;
+  width: 50px;
   margin: 5px;
   transition: transform 0.3s;
 }
