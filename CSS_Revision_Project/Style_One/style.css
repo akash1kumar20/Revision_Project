@@ -1,0 +1,85 @@
+.pricing-section {
+  max-width: 60%;
+  margin: 10% 20% 10% 20%;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5%;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: rgba(125, 125, 125, 0.1);
+}
+h1 {
+  font-weight: bolder;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  background-color: white;
+  box-shadow: 1cm white;
+  text-align: left;
+  padding: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.card h2 {
+  font-weight: bolder;
+  padding-left: 15px;
+}
+.card p {
+  font-weight: bold;
+  font-size: 110%;
+  padding-left: 12px;
+}
+.tick {
+  color: green;
+  font-size: 115%;
+}
+.cross {
+  color: red;
+  font-size: 115%;
+}
+.card.pro {
+  background-color: rgb(83, 134, 250);
+  padding: 5px 8px;
+  height: 90px;
+  color: white;
+  border-radius: 10% 10% 0 0;
+}
+.card.pro ul {
+  color: black;
+}
+.card.pro button {
+  background-color: rgb(83, 134, 250);
+  color: white;
+  padding: 0.2cm 0.8cm;
+  border: 1px solid white;
+  border-radius: 10%;
+}
+.card.basic {
+  border-radius: 10% 10% 0 0;
+  padding: 5px 8px;
+}
+.card.basic button {
+  padding: 0.2cm 0.8cm;
+  border: 1px solid white;
+  border-radius: 10%;
+}
+.card.premium {
+  border-radius: 10% 10% 0 0;
+  padding: 5px 8px;
+}
+.card.premium p {
+  color: rgb(74, 209, 148);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card.premium button {
+  background-color: rgb(74, 209, 148);
+  color: white;
+  padding: 0.2cm 0.8cm;
+  border: 1px solid white;
+  border-radius: 10%;
+}
