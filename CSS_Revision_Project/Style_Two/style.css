@@ -1,0 +1,171 @@
+.pricing-section {
+  max-width: 60%;
+  margin: 10% 20% 10% 20%;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5%;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: rgba(125, 125, 125, 0.1);
+}
+h1 {
+  font-weight: bolder;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.card h2 {
+  font-weight: bolder;
+  padding-left: 15px;
+}
+.card p {
+  font-weight: bold;
+  font-size: 110%;
+  padding-left: 12px;
+}
+.tick {
+  color: green;
+  font-size: 115%;
+}
+.cross {
+  color: red;
+  font-size: 115%;
+}
+.card.pro {
+  background-color: rgb(83, 134, 250);
+  padding: 5px 8px;
+  height: 90px;
+  color: white;
+  border-radius: 10% 10% 0 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+.card.pro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 12px rgba(79, 142, 247, 0.6); /* Border glow */
+  border: 2px solid transparent;
+}
+.card.pro ul {
+  color: black;
+}
+.card.pro button {
+  background-color: rgb(83, 134, 250);
+  color: white;
+  padding: 0.2cm 0.8cm;
+  border: 1px solid white;
+  border-radius: 10%;
+}
+.card.pro button:hover {
+  background-color: white;
+  color: rgb(83, 134, 250);
+  border: 1px solid rgb(83, 134, 250);
+  scale: 110%;
+  font-weight: 700;
+}
+.card.basic {
+  border-radius: 10% 10% 0 0;
+  padding: 5px 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+.card.basic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border: 2px solid #4f8ef7;
+}
+.card.basic button {
+  padding: 0.2cm 0.8cm;
+  border: 1px solid white;
+  border-radius: 10%;
+}
+.card.basic button:hover {
+  padding: 0.2cm 0.8cm;
+  border: 2px solid white;
+  margin-left: 8px;
+  border-radius: 10%;
+  scale: 110%;
+  font-weight: 700;
+  color: rgba(255, 251, 251, 0.9);
+  background-color: black;
+}
+.card.premium {
+  border-radius: 10% 10% 0 0;
+  padding: 5px 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+.card.premium:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border: 2px solid #4f8ef7;
+}
+.card.premium p {
+  color: rgb(74, 209, 148);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card.premium button {
+  background-color: rgb(74, 209, 148);
+  color: white;
+  padding: 0.2cm 0.8cm;
+  border: 1px solid white;
+  border-radius: 10%;
+}
+.card.premium button:hover {
+  color: rgb(74, 209, 148);
+  background-color: white;
+  padding: 0.2cm 0.8cm;
+  border: 2px solid rgb(74, 209, 148);
+  scale: 110%;
+  border-radius: 10%;
+  font-weight: 700;
+  margin-left: 4px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card h2,
+p,
+ul li {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+.card h2 {
+  animation-delay: 1s;
+}
+.card p {
+  animation-delay: 0.5s;
+}
+.card ul li {
+  animation-delay: 0.25s;
+}
+/* on the screen load text will appear after the specificy time.  */
+
+.card-container:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2),
+    rgba(125, 125, 125, 0.1),
+    rgb(0, 0, 0, 0.2)
+  );
+  border-radius: 20%;
+  box-shadow: 4px 16px 32px rgba(79, 142, 247, 0.6);
+  border: 2px solid black;
+}
+.pricing-section:hover {
+  border-top: 2px solid black;
+}
